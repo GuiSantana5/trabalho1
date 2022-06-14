@@ -1,0 +1,182 @@
+h1 {
+    font: italic normal 1.4em georgia, sans-serif;
+    font-size: 30px;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    color: #7D775C;
+}
+
+h2 {
+    font-size: 20px;
+    text-justify: auto;
+    text-align: center;
+}
+
+.temperature {
+    font-size: 50px;
+}
+
+body {
+    background-color: lightblue;
+}
+
+.weather-cloudAndSun {
+    height: 200px;
+    display: inline-grid;
+}
+
+.sun {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(45deg, #F3A966, yellow);
+    border-radius: 100%;
+    transform: rotate(0deg);
+    animation: xuanzhuang 12s infinite linear;
+    position: absolute;
+    left: 50%;
+    top: 60px;
+    z-index: 0;
+    opacity: 0.8;
+}
+
+.rays {
+    width: 8px;
+    height: 15px;
+    background: yellow;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    top: -25px;
+    box-shadow: 0 135px yellow;
+    border-radius: 4px;
+    transform-origin: 0px 75px;
+}
+
+.rays:nth-child(2) {
+    transform: rotate(45deg);
+}
+
+.rays:nth-child(3) {
+    transform: rotate(90deg);
+}
+
+.rays:nth-child(4) {
+    transform: rotate(135deg);
+}
+
+@keyframes xuanzhuang {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.cloud {
+    border-radius: 25px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    width: 150px;
+    height: 50px;
+    background: #cdedf8;
+}
+
+.cloud::after,
+.cloud::before {
+    content: '';
+    display: block;
+    background: #cdedf8;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.cloud:nth-child(2)::after,
+.cloud:nth-child(2)::before {
+    content: '';
+    display: block;
+    background: #cdedf8;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.cloud::after {
+    width: 80px;
+    height: 80px;
+    left: 45px;
+    top: -45px;
+}
+
+.cloud::before {
+    width: 60px;
+    height: 60px;
+    top: -10px;
+    left: 0;
+}
+
+.cloud:nth-child(2)::after {
+    width: 50px;
+    height: 50px;
+    left: 35px;
+    top: -30px;
+}
+
+.cloud:nth-child(2)::before {
+    width: 40px;
+    height: 40px;
+    top: -10px;
+    left: 0px;
+}
+
+@keyframes cloud {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.8) translateX(-200%);
+    }
+}
+
+@keyframes Rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.weather-cloudAndSun .cloud {
+    z-index: 1;
+    opacity: 0.95;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: auto auto;
+    position: relative;
+    align-items: center;
+}
+
+.box {
+    background: #cdedf8;
+    color: blue;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.wrapper1 {
+    display: inline-grid;
+    grid-template-columns: repeat(2, 300px);
+    gap: 10px;
+    align-items: center;
+}
+
+.center {
+    align-self: center;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+}

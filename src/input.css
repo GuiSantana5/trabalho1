@@ -1,0 +1,446 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/** BASE */
+
+html {
+  font-size: 16px;
+}
+
+/******************* HEADER *******************/
+
+/** NAVBAR */
+
+#overlay {
+  background: rgba(0, 0, 0, 0.3);
+
+  @apply
+  invisible
+  fixed
+  top-0
+  left-0
+  h-full
+  w-full
+  z-10
+}
+
+.navbar {
+  transition: 0.5s;
+
+  @apply 
+  w-full
+  flex
+  flex-wrap 
+  border-b
+  justify-between
+  items-center
+  px-12 py-8
+  fixed
+  top-0
+  left-0
+  z-20
+
+  md:py-0
+  xl:px-83
+  2xl:px-200
+}
+
+.navbar .navlist {
+  transition: .5s;
+  
+  @apply
+  w-full
+  absolute
+  left-0
+  top-full
+  bg-dark-blue
+  border-b
+  
+  h-0
+  invisible
+  overflow-y-hidden
+
+  /* TABLET */
+  md:static
+  md:visible
+  md:overflow-visible
+  md:w-auto
+  md:flex
+  md:border-none
+  md:h-auto
+  md:bg-transparent  
+
+  
+}
+
+.navbar.active .navlist {
+
+  @apply
+  h-151
+  visible
+  overflow-y-auto
+
+}
+
+.navbar .navlist .navlist-li {
+
+  @apply
+  text-white
+  font-semibold
+  h-30
+  flex
+  justify-center
+  items-center
+
+  md:h-36
+  
+}
+
+.navbar .navlist .navlist-li .navlist-a {
+
+  @apply
+  flex
+  h-full
+  w-full
+  justify-center
+  items-center
+  text-base
+
+  hover:text-blue
+  md:flex
+  md:items-center
+
+  md:p-0
+  md:px-8
+  
+}
+
+.navbar .navbar-logo {
+  @apply font-bold font-mont text-white
+}
+
+/* bars */
+
+
+.navbar .toggle-btn {
+
+  @apply
+  w-30
+  h-20
+  flex
+  justify-center
+  items-center
+
+  /* breakpoint */
+
+  md:hidden
+}
+
+.navbar .toggle-btn .toggle-bars {
+  height: 3px;
+  transition: .5s;
+
+  @apply
+  w-18
+  bg-white
+  block
+  relative
+}
+
+.navbar .toggle-bars::before, .toggle-bars::after {
+  height: 3px;
+  transition: .3s;
+  content: '';
+
+  @apply
+  w-18
+  bg-white
+  inline-block
+  absolute
+  left-0
+}
+
+.navbar .toggle-bars::before {
+  top: -10px;
+}
+
+.navbar .toggle-bars::after {
+  top: 10px;
+}
+
+
+
+.navbar.active .toggle-btn .toggle-bars {
+  @apply
+  bg-transparent
+}
+
+.navbar.active .toggle-btn .toggle-bars::before {
+  @apply
+  top-0
+  -rotate-45
+}
+
+.navbar.active .toggle-btn .toggle-bars::after {
+  @apply
+  top-0
+  rotate-45
+}
+
+/** END HEADER **/
+
+/******************* MAIN *******************/
+
+main {
+  @apply
+  overflow-x-hidden
+  pt-36
+  relative
+}
+
+/** END MAIN **/
+
+/********* SECTION ARDUINO *********/
+
+
+#arduino {
+  @apply
+  my-30
+  lg:pb-50
+}
+
+.ilu-abstract {
+  @apply
+  absolute
+  w-60
+  -z-10
+  -right-15
+
+  md:w-75
+  md:-right-30
+
+  lg:w-auto
+  lg:top-30
+  lg:-right-70
+}
+
+.ilu-abstract.right {
+
+
+  @apply
+  opacity-50
+  -left-30
+  top-300
+
+  md:w-55
+  md:top-250
+  md:-left-15
+
+  lg:w-auto
+  lg:left-10
+  lg:top-240
+}
+
+
+#arduino .title-h1 {
+  @apply
+  text-title
+  text-white
+  font-bold
+  text-center
+}
+
+#arduino .sensors-container {
+  @apply
+  my-30
+  mx-16
+  gap-24
+  flex
+  flex-wrap
+  justify-center
+
+}
+
+#arduino .sensors-container .sensor-item {
+  @apply
+  w-151
+
+  flex
+  flex-wrap
+  items-center
+  gap-8
+}
+
+#arduino .sensors-container .sensor-item .sensor-h2 {
+  @apply
+  text-white
+  font-bold
+  text-semi
+}
+
+#arduino .sensors-container .sensor-item .sensor-values-container {
+  @apply
+  w-full
+  h-50
+  p-10
+  
+  bg-dark-blue
+  rounded-md
+  flex
+  gap-16
+  items-center
+}
+
+#arduino .sensors-container .sensor-item .sensor-values-container .sensor-parameter {
+  @apply
+  text-white
+}
+
+#arduino .sensors-container .sensor-item .sensor-values-container .sensor-parameter .sensor-p {
+  @apply
+  text-base
+}
+
+#arduino .sensors-container .sensor-item .sensor-values-container .sensor-parameter .sensor-value {
+  @apply
+  font-bold
+  break-normal
+  text-semigold
+}
+
+/**** HOME PAGE ****/
+
+.title-h1 {
+  @apply
+  text-title
+  font-bold
+  text-center
+  text-white
+
+  md:text-left
+}
+
+.hero-li {
+  @apply
+  text-base
+  text-white
+
+  md:text-left
+}
+
+.scroll {
+  @apply
+  bg-dark
+}
+
+.max-container-slider{
+  @apply
+  relative mt-8 
+  sm:w-220
+  md:w-250
+}
+
+.icons-slider-container {
+  transform: translate(0%, -50%);
+  @apply
+  z-10 
+  absolute 
+  left-0 
+  top-18p 
+  w-full 
+  flex 
+  justify-between
+}
+
+.icons-slider-container .icon-container {
+  @apply
+  cursor-pointer
+  p-6
+}
+
+.icons-slider-container .icon-container .icon {
+  @apply
+  w-12
+}
+
+.slider-container {
+  @apply
+  relative overflow-hidden mx-auto h-170 w-120 
+  sm:w-150 sm:h-200
+  md:w-180 md:h-230
+}
+
+.slider-container .slider-ul{
+  transition: transform .5s ease-in-out;
+  @apply
+  flex
+}
+
+.slider-container .slider-ul .slider-li {
+
+  @apply
+  flex-col
+}
+
+.slider-container .slider-ul .slider-li .slider-img-container{
+
+  @apply
+  flex justify-center items-center w-120 h-120 bg-white
+
+  sm:w-150 sm:h-150
+  md:w-180 md:h-180
+}
+
+.slider-container .slider-ul .slider-li .slider-p{
+
+  @apply
+  mt-4 text-base text-white font-bold text-center
+}
+
+.materiais-ul {
+  @apply
+  mt-16
+  /* flex flex-wrap */
+  gap-16
+  justify-center
+  grid gap-16
+  sm:grid-cols-2
+  lg:grid-cols-3
+  xl:grid-cols-4
+  2xl:grid-cols-6
+
+
+}
+
+.materiais-ul li {
+  transition: 1s;
+  @apply
+  xl:hover:scale-125
+  
+}
+
+.materiais-ul li .materiais-container-img {
+  transition: 1s;
+  @apply
+  w-120 h-120 flex justify-center items-center bg-white
+  
+}
+
+
+
+
+.materiais-ul li .materiais-text {
+  @apply
+  mt-8 text-center font-bold text-white text-base
+}
+
+.footer-p {
+  @apply
+  font-bold
+  text-base
+  text-white
+  text-center
+
+  
+}

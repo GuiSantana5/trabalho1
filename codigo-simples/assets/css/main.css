@@ -1,0 +1,592 @@
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb
+}
+
+::after,
+::before {
+    --tw-content: ''
+}
+
+html {
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    font-family: Source Sans Pro
+}
+
+body {
+    margin: 0;
+    line-height: inherit
+}
+
+hr {
+    height: 0;
+    color: inherit;
+    border-top-width: 1px
+}
+
+abbr:where([title]) {
+    -webkit-text-decoration: underline dotted;
+    text-decoration: underline dotted
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit
+}
+
+b,
+strong {
+    font-weight: bolder
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-size: 1em
+}
+
+small {
+    font-size: 80%
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sub {
+    bottom: -.25em
+}
+
+sup {
+    top: -.5em
+}
+
+table {
+    text-indent: 0;
+    border-color: inherit;
+    border-collapse: collapse
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: inherit;
+    color: inherit;
+    margin: 0;
+    padding: 0
+}
+
+button,
+select {
+    text-transform: none
+}
+
+[type=button],
+[type=reset],
+[type=submit],
+button {
+    -webkit-appearance: button;
+    background-color: transparent;
+    background-image: none
+}
+
+:-moz-focusring {
+    outline: auto
+}
+
+:-moz-ui-invalid {
+    box-shadow: none
+}
+
+progress {
+    vertical-align: baseline
+}
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+    height: auto
+}
+
+[type=search] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px
+}
+
+::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit
+}
+
+summary {
+    display: list-item
+}
+
+blockquote,
+dd,
+dl,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+pre {
+    margin: 0
+}
+
+fieldset {
+    margin: 0;
+    padding: 0
+}
+
+legend {
+    padding: 0
+}
+
+menu,
+ol,
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+textarea {
+    resize: vertical
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+    opacity: 1;
+    color: #9ca3af
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    opacity: 1;
+    color: #9ca3af
+}
+
+input::placeholder,
+textarea::placeholder {
+    opacity: 1;
+    color: #9ca3af
+}
+
+[role=button],
+button {
+    cursor: pointer
+}
+
+:disabled {
+    cursor: default
+}
+
+audio,
+canvas,
+embed,
+iframe,
+img,
+object,
+svg,
+video {
+    display: block;
+    vertical-align: middle
+}
+
+img,
+video {
+    max-width: 100%;
+    height: auto
+}
+
+[hidden] {
+    display: none
+}
+
+*,
+::after,
+::before {
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x: ;
+    --tw-pan-y: ;
+    --tw-pinch-zoom: ;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-ordinal: ;
+    --tw-slashed-zero: ;
+    --tw-numeric-figure: ;
+    --tw-numeric-spacing: ;
+    --tw-numeric-fraction: ;
+    --tw-ring-inset: ;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgb(59 130 246 / 0.5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    --tw-blur: ;
+    --tw-brightness: ;
+    --tw-contrast: ;
+    --tw-grayscale: ;
+    --tw-hue-rotate: ;
+    --tw-invert: ;
+    --tw-saturate: ;
+    --tw-sepia: ;
+    --tw-drop-shadow: ;
+    --tw-backdrop-blur: ;
+    --tw-backdrop-brightness: ;
+    --tw-backdrop-contrast: ;
+    --tw-backdrop-grayscale: ;
+    --tw-backdrop-hue-rotate: ;
+    --tw-backdrop-invert: ;
+    --tw-backdrop-opacity: ;
+    --tw-backdrop-saturate: ;
+    --tw-backdrop-sepia:
+}
+
+.bg-background {
+    --tw-bg-opacity: 1;
+    background-color: rgb(0 25 46 / var(--tw-bg-opacity))
+}
+
+html {
+    font-size: 16px
+}
+
+#overlay {
+    background: rgba(0, 0, 0, .3);
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    height: 100%;
+    width: 100%
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom-width: 1px;
+    --tw-bg-opacity: 1;
+    background-color: rgb(0 25 46 / var(--tw-bg-opacity));
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem
+}
+
+@media (min-width:768px) {
+    .navbar {
+        padding-top: 0;
+        padding-bottom: 0
+    }
+}
+
+.navbar .navlist {
+    transition: .5s;
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    height: 0;
+    width: 100%;
+    overflow-y: hidden;
+    border-bottom-width: 1px;
+    --tw-bg-opacity: 1;
+    background-color: rgb(0 41 77 / var(--tw-bg-opacity))
+}
+
+@media (min-width:768px) {
+    .navbar .navlist {
+        visibility: visible;
+        position: static;
+        display: flex;
+        height: auto;
+        width: auto;
+        overflow: visible;
+        border-style: none;
+        background-color: transparent
+    }
+}
+
+.navbar.active .navlist {
+    visibility: visible;
+    height: 18.875rem;
+    overflow-y: auto
+}
+
+.navbar .navlist .navlist-li {
+    display: flex;
+    height: 3.75rem;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity))
+}
+
+@media (min-width:768px) {
+    .navbar .navlist .navlist-li {
+        height: 4.5rem
+    }
+}
+
+.navbar .navlist .navlist-li .navlist-a {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.13rem
+}
+
+.navbar .navlist .navlist-li .navlist-a:hover {
+    --tw-text-opacity: 1;
+    color: rgb(0 136 255 / var(--tw-text-opacity))
+}
+
+@media (min-width:768px) {
+    .navbar .navlist .navlist-li .navlist-a {
+        display: flex;
+        align-items: center;
+        padding: 0;
+        padding-left: 1rem;
+        padding-right: 1rem
+    }
+}
+
+.navbar .navbar-logo {
+    font-family: Montserrat;
+    font-weight: 700;
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity))
+}
+
+.navbar .toggle-btn {
+    display: flex;
+    height: 2.5rem;
+    width: 3.75rem;
+    align-items: center;
+    justify-content: center
+}
+
+@media (min-width:768px) {
+    .navbar .toggle-btn {
+        display: none
+    }
+}
+
+.navbar .toggle-btn .toggle-bars {
+    height: 3px;
+    transition: .5s;
+    position: relative;
+    display: block;
+    width: 2.25rem;
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity))
+}
+
+.navbar .toggle-bars::before,
+.toggle-bars::after {
+    height: 3px;
+    transition: .3s;
+    content: '';
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    width: 2.25rem;
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity))
+}
+
+.navbar .toggle-bars::before {
+    top: -10px
+}
+
+.navbar .toggle-bars::after {
+    top: 10px
+}
+
+.navbar.active .toggle-btn .toggle-bars {
+    background-color: transparent
+}
+
+.navbar.active .toggle-btn .toggle-bars::before {
+    top: 0;
+    --tw-rotate: -45deg;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+}
+
+.navbar.active .toggle-btn .toggle-bars::after {
+    top: 0;
+    --tw-rotate: 45deg;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    padding-top: 4.5rem
+}
+
+#arduino {
+    margin-top: 3.75rem;
+    margin-bottom: 3.75rem
+}
+
+.ilu-abstract {
+    position: absolute;
+    right: -1.875rem;
+    z-index: -10;
+    width: 7.5rem
+}
+
+@media (min-width:768px) {
+    .ilu-abstract {
+        right: -3.75rem;
+        width: 9.375rem
+    }
+}
+
+@media (min-width:1024px) {
+    .ilu-abstract {
+        top: 3.75rem;
+        right: -8.75rem;
+        width: auto
+    }
+}
+
+.ilu-abstract.right {
+    left: -3.75rem;
+    top: 37.5rem;
+    opacity: .5
+}
+
+@media (min-width:768px) {
+    .ilu-abstract.right {
+        top: 31.25rem;
+        left: -1.875rem;
+        width: 6.875rem
+    }
+}
+
+@media (min-width:1024px) {
+    .ilu-abstract.right {
+        left: 1.25rem;
+        top: 30rem;
+        width: auto
+    }
+}
+
+#arduino .title-h1 {
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 700;
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity))
+}
+
+#arduino .sensors-container {
+    margin-top: 3.75rem;
+    margin-bottom: 3.75rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem
+}
+
+#arduino .sensors-container .sensor-item {
+    display: flex;
+    width: 18.875rem;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem
+}
+
+#arduino .sensors-container .sensor-item .sensor-h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity))
+}
+
+#arduino .sensors-container .sensor-item .sensor-values-container {
+    display: flex;
+    height: 6.25rem;
+    width: 100%;
+    align-items: center;
+    gap: 2rem;
+    border-radius: .375rem;
+    --tw-bg-opacity: 1;
+    background-color: rgb(0 41 77 / var(--tw-bg-opacity));
+    padding: 1.25rem
+}
+
+#arduino .sensors-container .sensor-item .sensor-values-container .sensor-parameter {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity))
+}
+
+#arduino .sensors-container .sensor-item .sensor-values-container .sensor-parameter .sensor-p {
+    font-size: 1.13rem
+}
+
+#arduino .sensors-container .sensor-item .sensor-values-container .sensor-parameter .sensor-value {
+    overflow-wrap: normal;
+    word-break: normal;
+    font-size: 1.82rem;
+    font-weight: 700
+}

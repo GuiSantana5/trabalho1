@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Clima</title>
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="assets/css/main.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?famil   y=Montserrat:wght@400;700&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<header class="center">
+    <h1>
+        Météo Gif-sur-Yvette
+    </h1>
+
+    <nav id="navbar" class="navbar scroll">
+        <span class="navbar-logo">TCC/UNICAMP</span>
+        <ul class="navlist onscroll">
+            <li class="navlist-li"><a href="home.html" class="navlist-a">Home</a></li>
+            <li class="navlist-li"><a href="sensor.html" class="navlist-a">Sobre o projeto</a></li>
+            <li class="navlist-li"><a href="https://www.ft.unicamp.br/pt-br/graduacao/cursos/et" class="navlist-a">Telecomunicações</a></li>
+            <li class="navlist-li"><a href="clima.html" class="navlist-a">Clima</a></li>
+        </ul>
+        <button id="btn-mobile" class="toggle-btn">
+  <div class="toggle-bars"></div>
+</button>
+    </nav>
+
+</header>
+</p>
+
+<body onload="litConfig();">
+    <div class="center">
+
+
+        <div class="wrapper">
+            <div class="contenant temperature" id="temp"><span class="contenu">21°</span><span class="unite">C</span></div>
+            <div class="weather-cloudAndSun">
+                <div class="cloud"></div>
+                <div class="sun">
+                    <div class="rays"></div>
+                    <div class="rays"></div>
+                    <div class="rays"></div>
+                    <div class="rays"></div>
+                </div>
+            </div>
+        </div>
+        <!-- <ul>
+  <li class="contenant" id="temp">Température: <span class="contenu">-42</span> <span class="unite">C</span></li>
+  <li class="contenant" id="pression">Pression: <span class="contenu">1</span> <span class="unite">bar</span></li>
+  <li class="contenant" id="vent">Vent: <span class="contenu">100</span> <span class="unite">km/h</span></li>
+</ul> -->
+
+
+        <div class="box">
+            <h2 class="contenant" id="nuage">
+                <span class="contenu">Parcialmente nublado</span>
+            </h2>
+            <div class="wrapper contenant" id="vent">
+                <h2>Velocidade do Vento</h2>
+                <h2>
+                    <span class="contenu">11</span> <span class="unite"> km/h</span></h2>
+            </div>
+            <div class="wrapper contenant" id="visib">
+                <h2>Visibilidade</h2>
+                <h2>
+                    <span class="contenu">16</span><span class="unite">km</span></h2>
+            </div>
+            <div class="wrapper contenant" id="lune">
+                <h2>Nascer do sol</h2>
+                <h2><span class="contenu">4:47/20:05</span><span class="unite"> h</span></h2>
+            </div>
+            <div class="wrapper contenant" id="soleil">
+                <h2>Pôr do Sol</h2>
+                <h2><span class="contenu">5:50/21:53</span><span class="unite"> h</span></h2>
+            </div>
+            <div class="wrapper contenant" id="jour">
+                <h2>Duração do dia</h2>
+                <h2><span class="contenu">16:03</span><span class="unite">h</span></h2>
+            </div>
+        </div>
+
+        <div class="mapouter">
+            <div class="gmap_canvas"><iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Limeira&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org">123 movies</a><br>
+                <style>
+                    .mapouter {
+                        position: relative;
+                        text-align: left;
+                        height: 345px;
+                        width: 1220px;
+                    }
+                </style><a href="https://www.embedgooglemap.net">embedgooglemap.net</a>
+                <style>
+                    .gmap_canvas {
+                        overflow: hidden;
+                        background: none!important;
+                        height: 345px;
+                        width: 1220px;
+                    }
+                </style>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+        <center>
+            <a href="contact.html">
+        Contact
+      </a><br>
+
+            <a href="config.html">
+        Configuration
+      </a>
+    </div>
+</body>
+
+</html>

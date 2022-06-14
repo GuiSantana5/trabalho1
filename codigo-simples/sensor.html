@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/main.min.css" rel="stylesheet">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- GOOGLE FONTS END -->
+</head>
+
+<body class="bg-background">
+    <header>
+        <nav id="navbar" class="navbar bg-background">
+            <span class="navbar-logo">TCC/UNICAMP</span>
+            <ul class="navlist">
+                <li class="navlist-li"><a href="home.html" class="navlist-a">Home</a></li>
+                <li class="navlist-li"><a href="sensor.html" class="navlist-a">Sobre o projeto</a></li>
+                <li class="navlist-li"><a href="https://www.ft.unicamp.br/pt-br/graduacao/cursos/et" class="navlist-a">Telecomunicações</a></li>
+                <li class="navlist-li"><a href="clima.html" class="navlist-a">Clima</a></li>
+            </ul>
+            <button id="btn-mobile" class="toggle-btn"><div class="toggle-bars"></div></button>
+        </nav>
+    </header>
+    <main>
+        <img class="ilu-abstract" src="assets/img/ilu-abstract-left.svg" alt="" srcset="">
+        <img class="ilu-abstract right" src="assets/img/ilu-abstract-right.svg" alt="" srcset="">
+        <section id="arduino">
+            <h1 class="title-h1">Controle Arduino</h1>
+            <div class="sensors-container">
+
+                <div class="sensor-item">
+                    <img src="assets/img/icon-thermomeeter.svg" alt="" srcset="">
+                    <h2 class="sensor-h2">Sensor de temperatura</h2>
+                    <div class="sensor-values-container">
+                        <div class="sensor-parameter">
+                            <p class="sensor-p">Graus Celsius</p>
+                            <p class="sensor-value">24º</p>
+                        </div>
+                        <div class="sensor-parameter">
+                            <p class="sensor-p">Graus Fahrenheit</p>
+                            <p class="sensor-value">75,2º</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sensor-item">
+                    <img src="assets/img/icon-gas.svg" alt="" srcset="">
+                    <h2 class="sensor-h2">Sensor de gás</h2>
+                    <div class="sensor-values-container">
+                        <div class="sensor-parameter">
+                            <p class="sensor-p">Valor do gás</p>
+                            <p class="sensor-value">24º</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sensor-item">
+                    <img src="assets/img/icon-eletricity.svg" alt="" srcset="">
+                    <h2 class="sensor-h2">Sensor da corrente</h2>
+                    <div class="sensor-values-container">
+                        <div class="sensor-parameter">
+                            <p class="sensor-p">Valor do corrente</p>
+                            <p class="sensor-value">24º</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer class="2xl:px-225 xl:px-88 lg:px-47 px-16 flex flex-wrap gap-4 justify-center items-center w-full p-4 bg-dark sm:justify-between">
+        <p class="footer-p">Monitoramento remoto de parâmetros físicos</p>
+        <p class="footer-p">Projeto | UNICAMP</p>
+    </footer>
+    <div id="overlay"></div>
+    <script src="assets/js/script.js"></script>
+    <!-- <script src="assets/js/app.js"></script> -->
+</body>
+
+</html>

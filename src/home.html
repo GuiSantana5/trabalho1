@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Source+Sans+Pro:wght@400;600;700&display=swap"
+    rel="stylesheet">
+  <!-- GOOGLE FONTS END -->
+</head>
+
+<body class="bg-background">
+  <header>
+    <nav id="navbar" class="navbar scroll">
+      <span class="navbar-logo">GRUPO/LOGO</span>
+      <ul class="navlist onscroll">
+        <li class="navlist-li"><a href="#" class="navlist-a">Home</a></li>
+        <li class="navlist-li"><a href="#" class="navlist-a">Sobre o projeto</a></li>
+        <li class="navlist-li"><a href="#" class="navlist-a">Sensores</a></li>
+        <li class="navlist-li"><a href="#" class="navlist-a">Telecomunicações</a></li>
+        <li class="navlist-li"><a href="#" class="navlist-a">Clima</a></li>
+      </ul>
+      <button id="btn-mobile" class="toggle-btn">
+        <div class="toggle-bars"></div>
+      </button>
+    </nav>
+  </header>
+  <main>
+    <!-- <img class="ilu-abstract"src="assets/img/ilu-abstract-left.svg" alt="" srcset="">
+    <img class="ilu-abstract right"src="assets/img/ilu-abstract-right.svg" alt="" srcset=""> -->
+    <section id="hero"
+      class="xl:gap-x-89 lg:justify-center md:pt-45 md:justify-between md:gap-0 pt-30  w-screen flex justify-center items-center flex-wrap gap-16 bg-dark">
+      <img class="xl:h-128 xl:w-200 lg:h-128 lg:w-200 md:order-2 md:w-135 md:h-100  mx-16 w-120"
+        src="assets/img/ilu-arduino.png" alt="" srcset="">
+      <article class="md:items-start md:order-1 mx-16 flex flex-col justify-center items-center gap-10 text-center">
+        <h1 class="title-h1 md:w-185">Trabalho sobre arduino </h1>
+        <p class="md:text-left text-base text-white">Pequena descrição de duas linhas<br>sobre ele ficaria aqui</p>
+        <ul class="md:gap-x-8 grid grid-cols-2 justify-center gap-x-4">
+          <li class="hero-li">Vinicius M.</li>
+          <li class="hero-li">Integrante 2</li>
+          <li class="hero-li">Integrante 3</li>
+          <li class="hero-li">Integrante 4</li>
+          <li class="hero-li">Integrante 5</li>
+        </ul>
+        <button class="md:mx-0 mt-8 py-4 px-12 bg-dark-blue text-white font-bold rounded mx-auto">saber mais</button>
+      </article>
+      <img class="md:pt-45 md:order-3 pd-16 w-full" src="assets/img/ilu-wave.svg" alt="" srcset="">
+    </section>
+    <section id="carrosel" class="my-30 flex flex-col items-center">
+      <h2 class="title-h1">Carrossel</h2>
+      <div class="max-container-slider">
+        <div class="icons-slider-container">
+          <div id="icon-left" style="transform: scaleX(-1);" class="icon-container">
+            <img class="icon" src="assets/img/icon-arrow.svg" alt="" srcset="">
+          </div>
+          <div id="icon-right" class="icon-container">
+            <img class="icon" src="assets/img/icon-arrow.svg" alt="" srcset="">
+          </div>
+        </div>
+        <div class="slider-container">
+          <ul id="container" class="slider-ul">
+            <li class="slider-li">
+              <div class="slider-img-container">
+                <img src="assets/img/material-1.jpg" alt="" srcset="">
+              </div>
+              <p class="slider-p">Nome do item 1</p>
+            </li>
+            <li class="slider-li">
+              <div class="slider-img-container">
+                <img src="assets/img/material-1.jpg" alt="" srcset="">
+              </div>
+              <p class="slider-p">Nome do item 2</p>
+            </li>
+            <li class="slider-li">
+              <div class="slider-img-container">
+                <img src="assets/img/material-1.jpg" alt="" srcset="">
+              </div>
+              <p class="slider-p">Nome do item 3</p>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="materias-metodos" class="2xl:px-225 xl:px-88 lg:px-47 px-16 my-30">
+      <h1 class="title-h1">Materias e métodos do TCC</h1>
+      <h2 class="md:text-left font-bold font-mont text-white text-semi text-center mt-16">Objetivos do projeto</h2>
+      <p class="md:text-left text-white mt-8 text-center">O objetivo geral do trabalho é o estudo e a partir de um microcontrolador arduino e de um sistema de sensoriamento de gás, temperatura para aplicar de uma forma prática toda essa motivação. Projetar tais sistemas para que exerçam sua função em tempo real, durante todo o período anual, buscando sempre uma economia de custos, energias e um aumento da eficiência e segurança de um laboratório.</p>
+    </section>
+    <section id="materias-utilizados" class="lg:px-32 px-16 my-30 flex flex-col items-center w-full">
+      <h1 class="text-title text-white font-bold text-center ">Materiais Utilizados</h1>
+      <div class="relative">
+        <ul class="materiais-ul">
+          <li class="">
+            <div class="materiais-container-img">
+              <img src="assets/img/material-1.jpg" alt="" srcset="">
+            </div>
+            <p class="materiais-text">Material 1</p>
+          </li>
+          <li class="">
+            <div class="materiais-container-img">
+              <img src="assets/img/material-2.jpg" alt="" srcset="">
+            </div>
+            <p class="materiais-text">Material 2</p>
+          </li>
+          <li class="">
+            <div class="materiais-container-img">
+              <img src="assets/img/material-3.jpg" alt="" srcset="">
+            </div>
+            <p class="materiais-text">Material 3</p>
+          </li>
+          <li class="">
+            <div class="materiais-container-img">
+              <img src="assets/img/material-4.jpg" alt="" srcset="">
+            </div>
+            <p class="materiais-text">Material 4</p>
+          </li>
+          <li class="">
+            <div class="materiais-container-img">
+              <img src="assets/img/material-5.jpg" alt="" srcset="">
+            </div>
+            <p class="materiais-text">Material 5</p>
+          </li>
+          <li class="">
+            <div class="materiais-container-img">
+              <img src="assets/img/material-6.jpg" alt="" srcset="">
+            </div>
+            <p class="materiais-text">Material 6</p>
+          </li>
+        </ul>
+      </div>
+      
+    </section>
+  </main>
+  <footer class="2xl:px-225 xl:px-88 lg:px-47 px-16 flex flex-wrap gap-4 justify-center items-center w-full p-4 bg-dark sm:justify-between">
+    <p class="footer-p">Nome do trabalho</p>
+    <p class="footer-p">Copyright © 2022 | Instituição de ensino</p>
+  </footer>
+  <div id="overlay"></div>
+  <script src="assets/js/script.js"></script>
+  <!-- <script src="assets/js/app.js"></script> -->
+</body>
+
+</html>
